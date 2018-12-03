@@ -12,7 +12,7 @@ before_deploy:
   - npm run build
 deploy:
   provider: script
-  script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
+  script: netlify deploy -s $NETLIFY_SITE_ID -d $NETLIFY_ACCESS_TOKEN -d ./build
   skip_cleanup: true
   on:
     branch: master
