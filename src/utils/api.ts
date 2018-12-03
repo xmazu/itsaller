@@ -7,12 +7,12 @@ export const fetchArtist = async (query: string): Promise<Artist> => {
   const artistResponse = await apiFetch(`/artists/${query}`);
   const artist = await artistResponse.json();
 
-  if (!artist) {
+  if (!artist || artist.error) {
     throw new Error(`Artist @${query} not found!`);
   }
 
   return {
-    facebook: artist.facebook_id,
+    facebook: artist.facebook_page_url,
     image: artist.image_url,
     name: artist.name
   };

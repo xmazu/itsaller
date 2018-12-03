@@ -8,6 +8,7 @@ import SearchInput from './components/search-input';
 import { Artist } from './types';
 import { fetchArtist, fetchArtistEvents } from './utils/api';
 import Loader from './components/loader';
+import ArtistProfile from './components/artist-profile/ArtistProfile';
 
 const history = createHistory();
 
@@ -76,16 +77,20 @@ export default class ApplicationContainer extends React.Component<
         artist
       });
     } catch (error) {
-      this.setState({ error });
+      this.setState({ error, artist: null });
     } finally {
       this.setState({ pending: false });
     }
   }
 
   renderResults() {
-    const { pending, error, query } = this.state;
+    const { pending, error, query, artist } = this.state;
 
-    if (!query) {
+    if (error) {
+      return <div>Artist not found</div>;
+    }
+
+    if (!query || !artist) {
       return null;
     }
 
@@ -93,10 +98,7 @@ export default class ApplicationContainer extends React.Component<
       return <Loader />;
     }
 
-    if (error) {
-      return <div>Artist not found</div>;
-    }
-    return 'works';
+    return <ArtistProfile artist={artist} />;
   }
 
   render() {
