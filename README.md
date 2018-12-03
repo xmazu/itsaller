@@ -1,0 +1,1 @@
+fancy name generator: https://mrsharpoblunto.github.io/foswig.js/
