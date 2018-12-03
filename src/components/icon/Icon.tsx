@@ -1,11 +1,5 @@
 import React, { SFC } from 'react';
-import styled from 'styled-components';
 import { IconSvgPaths20, IconName } from '@blueprintjs/icons';
-
-const SVG = styled.svg`
-  height: 16px;
-  width: 16px;
-`;
 
 export interface IconProps {
   icon: IconName;
@@ -23,10 +17,14 @@ const Icon: SFC<IconProps> = ({ icon }) => {
   ));
 
   return (
-    <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      style={{ height: 20, width: 20 }}
+    >
       <title>{icon}</title>
       {pathStrings}
-    </SVG>
+    </svg>
   );
 };
 

@@ -1,18 +1,27 @@
-import React, { SFC } from 'react';
-import styled from 'styled-components';
+import React from 'react';
+
 import Icon from '../icon';
+import './search-input.scss';
 
-const Container = styled.div`
-  display: inline-flex;
-`;
+export interface SearchInputProps {
+  value: string;
+  onChange(query: string): void;
+}
 
-const InputComponent = styled.input``;
+export default class SearchInput extends React.Component<SearchInputProps> {
+  onChange = (e: React.SyntheticEvent<HTMLInputElement>) =>
+    this.props.onChange(e.currentTarget.value);
 
-const SearchInput: SFC = () => (
-  <Container>
-    <Icon icon="search" />
-    <InputComponent />
-  </Container>
-);
-
-export default SearchInput;
+  render() {
+    return (
+      <div className="searchInput">
+        <Icon icon="search" />
+        <input
+          placeholder="search..."
+          onChange={this.onChange}
+          value={this.props.value}
+        />
+      </div>
+    );
+  }
+}
