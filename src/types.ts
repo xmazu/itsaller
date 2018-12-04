@@ -12,4 +12,6 @@ export interface EventEntity {
   venue: string;
   city: string;
   country: string;
+  lat: string;
+  long: string;
 }

@@ -29,7 +29,9 @@ export const fetchArtistEvents = async (
         city: event.venue.city,
         venue: event.venue.name,
         date: event.datetime,
-        country: event.venue.country
+        country: event.venue.country,
+        long: event.venue.longitude,
+        lat: event.venue.latitude
       }))
     : [];
 };
