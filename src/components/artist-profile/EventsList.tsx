@@ -8,7 +8,9 @@ export interface EventsListProps {
   events: EventEntity[];
 }
 
-const eventItemRenderer = (event: EventEntity) => <ArtistEvent event={event} />;
+const eventItemRenderer = (event: EventEntity, index: number) => (
+  <ArtistEvent key={index} event={event} />
+);
 
 const EventsList: SFC<EventsListProps> = ({ events }) => (
   <div className="eventsList">
