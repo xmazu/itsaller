@@ -47,7 +47,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "0",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "event": Object {
             "city": "Krakow",
@@ -88,7 +88,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "0",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "event": Object {
               "city": "Krakow",

@@ -6,10 +6,12 @@ import ArtistProfile from '../ArtistProfile';
 describe('<ArtistProfile />', () => {
   it('renders correctly', () => {
     const mockedEvent = {
-      date: new Date(2018, 1, 1, 9, 30, 0, 0),
-      venue: 'Tauron Arena',
+      date: "2018-12-30T19:00:48",
       city: 'Krakow',
-      country: 'Poland'
+      country: 'Poland',
+      venue: 'Tauron Arena',
+      lat: 0,
+      long: 0
     };
     const artist = {
       facebook: 'http://fb.me',

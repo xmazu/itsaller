@@ -16,7 +16,9 @@ ShallowWrapper {
         Object {
           "city": "Krakow",
           "country": "Poland",
-          "date": 2018-02-01T08:30:00.000Z,
+          "date": "2018-12-30T19:00:48",
+          "lat": 0,
+          "long": 0,
           "venue": "Tauron Arena",
         },
       ]
@@ -74,7 +76,9 @@ ShallowWrapper {
                 Object {
                   "city": "Krakow",
                   "country": "Poland",
-                  "date": 2018-02-01T08:30:00.000Z,
+                  "date": "2018-12-30T19:00:48",
+                  "lat": 0,
+                  "long": 0,
                   "venue": "Tauron Arena",
                 },
               ]
@@ -215,7 +219,9 @@ ShallowWrapper {
                 Object {
                   "city": "Krakow",
                   "country": "Poland",
-                  "date": 2018-02-01T08:30:00.000Z,
+                  "date": "2018-12-30T19:00:48",
+                  "lat": 0,
+                  "long": 0,
                   "venue": "Tauron Arena",
                 },
               ]
@@ -233,7 +239,9 @@ ShallowWrapper {
               Object {
                 "city": "Krakow",
                 "country": "Poland",
-                "date": 2018-02-01T08:30:00.000Z,
+                "date": "2018-12-30T19:00:48",
+                "lat": 0,
+                "long": 0,
                 "venue": "Tauron Arena",
               },
             ],
@@ -292,7 +300,9 @@ ShallowWrapper {
                   Object {
                     "city": "Krakow",
                     "country": "Poland",
-                    "date": 2018-02-01T08:30:00.000Z,
+                    "date": "2018-12-30T19:00:48",
+                    "lat": 0,
+                    "long": 0,
                     "venue": "Tauron Arena",
                   },
                 ]
@@ -433,7 +443,9 @@ ShallowWrapper {
                   Object {
                     "city": "Krakow",
                     "country": "Poland",
-                    "date": 2018-02-01T08:30:00.000Z,
+                    "date": "2018-12-30T19:00:48",
+                    "lat": 0,
+                    "long": 0,
                     "venue": "Tauron Arena",
                   },
                 ]
@@ -451,7 +463,9 @@ ShallowWrapper {
                 Object {
                   "city": "Krakow",
                   "country": "Poland",
-                  "date": 2018-02-01T08:30:00.000Z,
+                  "date": "2018-12-30T19:00:48",
+                  "lat": 0,
+                  "long": 0,
                   "venue": "Tauron Arena",
                 },
               ],

@@ -8,7 +8,9 @@ ShallowWrapper {
       Object {
         "city": "Krakow",
         "country": "Poland",
-        "date": 2018-02-01T08:30:00.000Z,
+        "date": "2018-12-30T19:00:48",
+        "lat": 0,
+        "long": 0,
         "venue": "Tauron Arena",
       }
     }
@@ -33,12 +35,12 @@ ShallowWrapper {
           <div
             className="artistEvent__month"
           >
-            Feb
+            Dec
           </div>
           <div
             className="artistEvent__day"
           >
-            01
+            30
           </div>
         </div>,
         <div
@@ -57,8 +59,10 @@ ShallowWrapper {
             Poland
           </div>
         </div>,
+        false,
       ],
       "className": "artistEvent",
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -71,12 +75,12 @@ ShallowWrapper {
             <div
               className="artistEvent__month"
             >
-              Feb
+              Dec
             </div>,
             <div
               className="artistEvent__day"
             >
-              01
+              30
             </div>,
           ],
           "className": "artistEvent__date",
@@ -88,11 +92,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Feb",
+              "children": "Dec",
               "className": "artistEvent__month",
             },
             "ref": null,
-            "rendered": "Feb",
+            "rendered": "Dec",
             "type": "div",
           },
           Object {
@@ -100,11 +104,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "01",
+              "children": "30",
               "className": "artistEvent__day",
             },
             "ref": null,
-            "rendered": "01",
+            "rendered": "30",
             "type": "div",
           },
         ],
@@ -168,6 +172,7 @@ ShallowWrapper {
         ],
         "type": "div",
       },
+      false,
     ],
     "type": "div",
   },
@@ -184,12 +189,12 @@ ShallowWrapper {
             <div
               className="artistEvent__month"
             >
-              Feb
+              Dec
             </div>
             <div
               className="artistEvent__day"
             >
-              01
+              30
             </div>
           </div>,
           <div
@@ -208,8 +213,10 @@ ShallowWrapper {
               Poland
             </div>
           </div>,
+          false,
         ],
         "className": "artistEvent",
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -222,12 +229,12 @@ ShallowWrapper {
               <div
                 className="artistEvent__month"
               >
-                Feb
+                Dec
               </div>,
               <div
                 className="artistEvent__day"
               >
-                01
+                30
               </div>,
             ],
             "className": "artistEvent__date",
@@ -239,11 +246,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Feb",
+                "children": "Dec",
                 "className": "artistEvent__month",
               },
               "ref": null,
-              "rendered": "Feb",
+              "rendered": "Dec",
               "type": "div",
             },
             Object {
@@ -251,11 +258,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "01",
+                "children": "30",
                 "className": "artistEvent__day",
               },
               "ref": null,
-              "rendered": "01",
+              "rendered": "30",
               "type": "div",
             },
           ],
@@ -319,6 +326,7 @@ ShallowWrapper {
           ],
           "type": "div",
         },
+        false,
       ],
       "type": "div",
     },
