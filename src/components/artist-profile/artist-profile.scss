@@ -1,0 +1,39 @@
+.artistProfile__details {
+  background-color: #fff;
+  padding-bottom: 8px;
+}
+
+.artistProfile__image {
+  padding: 15px;
+  & img {
+    width: 100%
+  }
+}
+
+.artistProfile__name {
+  margin: 8px 15px;
+  & h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.artistProfile__link {
+  margin: 8px 15px;
+  & a {
+    color: #1070ca;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.artistProfile_events {
+  margin-top: 20px;
+}
+
+.eventsList {
+  background: #fff;
+  padding: 15px;
+}

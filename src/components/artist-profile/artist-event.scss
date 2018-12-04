@@ -1,0 +1,27 @@
+.artistEvent {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F9F9FB;
+  padding: 8px 0;
+}
+
+.artistEvent__date {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  color: #1070CA;
+}
+
+.artistEvent__month {
+  font-size: 0.8rem;
+}
+
+.artistEvent__day {
+  font-size: 1.2rem;
+}
+
+.artistEvent__venue {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
