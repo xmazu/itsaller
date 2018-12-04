@@ -29,7 +29,7 @@ export const fetchArtistEvents = async (
         city: event.venue.city,
         venue: event.venue.name,
         date: new Date(event.datetime),
-        country: event.venue.city
+        country: event.venue.country
       }))
     : [];
 };

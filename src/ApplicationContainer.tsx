@@ -55,25 +55,24 @@ export default class ApplicationContainer extends React.Component<
 
   onChangeQuery = (query: string) => {
     if (!query) {
-      this.setState({
-        query: '',
-        pending: false,
-        artist: null,
-        error: null,
-        events: []
-      });
+      this.setState(
+        {
+          query: '',
+          pending: false,
+          artist: null,
+          error: null,
+          events: []
+        },
+        () => this.changeQueryCallback(query)
+      );
       return;
     }
 
-    this.setState(
-      {
-        query
-      },
-      () => {
-        history.replace('/' + decodeURIComponent(query));
-      }
-    );
+    this.setState({ query }, () => this.changeQueryCallback(query));
   };
+
+  changeQueryCallback = (query: string) =>
+    history.replace('/' + decodeURIComponent(query));
 
   onKeyUp() {
     if (this.state.query) {
@@ -123,7 +122,7 @@ export default class ApplicationContainer extends React.Component<
     return (
       <ConditionalOverlay
         condition={pending}
-        overlay={<Loader text="Searching the best result..." />}
+        overlay={<Loader text="Searching for the best result..." />}
       >
         <div className="applicationContainer">
           <div className="applicationContainer__content">
