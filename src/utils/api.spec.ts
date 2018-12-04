@@ -38,12 +38,7 @@ describe('fetchArtistEvents()', () => {
     window.fetch = mockFetch(plainEventsMock);
 
     const events = await fetchArtistEvents('maroon5');
-    expect(events).toEqual(
-      mappedEventsMock.map(event => ({
-        ...event,
-        date: new Date(event.date)
-      }))
-    );
+    expect(events).toEqual(mappedEventsMock)
     expect(window.fetch).toHaveBeenCalledTimes(1);
   });
 });

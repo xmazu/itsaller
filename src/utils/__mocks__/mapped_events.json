@@ -2,109 +2,109 @@
   {
     "city": "Las Vegas",
     "venue": "Mandalay Bay Events Center",
-    "date": "2018-12-30T18:00:48.000Z",
+    "date": "2018-12-30T19:00:48",
     "country": "United States"
   },
   {
     "city": "Las Vegas",
     "venue": "Mandalay Bay Events Center",
-    "date": "2018-12-31T18:00:28.000Z",
+    "date": "2018-12-31T19:00:28",
     "country": "United States"
   },
   {
     "city": "Brisbane",
     "venue": "Brisbane Entertainment Centre",
-    "date": "2019-02-19T18:00:50.000Z",
+    "date": "2019-02-19T19:00:50",
     "country": "Australia"
   },
   {
     "city": "Sydney",
     "venue": "Qudos Bank Arena",
-    "date": "2019-02-21T18:00:51.000Z",
+    "date": "2019-02-21T19:00:51",
     "country": "Australia"
   },
   {
     "city": "Melbourne",
     "venue": "Rod Laver Arena",
-    "date": "2019-02-22T18:00:13.000Z",
+    "date": "2019-02-22T19:00:13",
     "country": "Australia"
   },
   {
     "city": "Tokyo",
     "venue": "Tokyo Dome",
-    "date": "2019-02-25T18:00:23.000Z",
+    "date": "2019-02-25T19:00:23",
     "country": "Japan"
   },
   {
     "city": "Seoul",
     "venue": "Gocheok Sky Dome",
-    "date": "2019-02-27T18:00:33.000Z",
+    "date": "2019-02-27T19:00:33",
     "country": "South Korea"
   },
   {
     "city": "Kaohsiung City",
     "venue": "TBA",
-    "date": "2019-03-01T18:00:36.000Z",
+    "date": "2019-03-01T19:00:36",
     "country": "Taiwan"
   },
   {
     "city": "Macau",
     "venue": "TBA",
-    "date": "2019-03-03T18:00:44.000Z",
+    "date": "2019-03-03T19:00:44",
     "country": "Macau"
   },
   {
     "city": "Manila",
     "venue": "SM Mall Of Asia",
-    "date": "2019-03-05T18:00:07.000Z",
+    "date": "2019-03-05T19:00:07",
     "country": "Philippines"
   },
   {
     "city": "Singapore",
     "venue": "NATIONAL STADIUM",
-    "date": "2019-03-07T18:00:41.000Z",
+    "date": "2019-03-07T19:00:41",
     "country": "Singapore"
   },
   {
     "city": "Bangkok",
     "venue": "CHALLENGER HALL",
-    "date": "2019-03-09T18:00:34.000Z",
+    "date": "2019-03-09T19:00:34",
     "country": "Thailand"
   },
   {
     "city": "Aalborg",
     "venue": "Mollenpark",
-    "date": "2019-06-01T17:00:44.000Z",
+    "date": "2019-06-01T19:00:44",
     "country": "Denmark"
   },
   {
     "city": "Cologne",
     "venue": "Lanxess Arena",
-    "date": "2019-06-03T17:00:11.000Z",
+    "date": "2019-06-03T19:00:11",
     "country": "Germany"
   },
   {
     "city": "Prague",
     "venue": "O2 ARENA",
-    "date": "2019-06-05T17:00:34.000Z",
+    "date": "2019-06-05T19:00:34",
     "country": "Czech Republic"
   },
   {
     "city": "Kraków",
     "venue": "Tauron Arena",
-    "date": "2019-06-06T17:00:29.000Z",
+    "date": "2019-06-06T19:00:29",
     "country": "Poland"
   },
   {
     "city": "Amsterdam",
     "venue": "Ziggo Dome",
-    "date": "2019-06-10T17:00:09.000Z",
+    "date": "2019-06-10T19:00:09",
     "country": "Netherlands"
   },
   {
     "city": "Paris",
     "venue": "AccorHotels Arena",
-    "date": "2019-06-11T17:00:06.000Z",
+    "date": "2019-06-11T19:00:06",
     "country": "France"
   }
 ]
