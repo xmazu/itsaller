@@ -3,5 +3,7 @@ node_js: node
 cache:
   directories:
     - node_modules
+before_script:
+  - export TZ=Europe/Warsaw
 script:
   - npm test

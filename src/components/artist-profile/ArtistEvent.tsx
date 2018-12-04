@@ -1,5 +1,5 @@
 import React, { SFC } from 'react';
-import format from 'date-fns/format';
+import moment from 'moment';
 
 import './artist-event.scss';
 import { EventEntity } from '../../types';
@@ -11,8 +11,16 @@ export interface ArtistEventProps {
 const ArtistEvent: SFC<ArtistEventProps> = ({ event }) => (
   <div className="artistEvent">
     <div className="artistEvent__date">
-      <div className="artistEvent__month">{format(event.date, 'MMM')}</div>
-      <div className="artistEvent__day">{format(event.date, 'DD')}</div>
+      <div className="artistEvent__month">
+        {moment(event.date)
+          .utc()
+          .format('MMM')}
+      </div>
+      <div className="artistEvent__day">
+        {moment(event.date)
+          .utc()
+          .format('DD')}
+      </div>
     </div>
 
     <div className="artistEvent__venue">
