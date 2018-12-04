@@ -59,10 +59,10 @@ ShallowWrapper {
             Poland
           </div>
         </div>,
-        false,
+        undefined,
       ],
       "className": "artistEvent",
-      "onClick": [Function],
+      "onClick": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -172,7 +172,7 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      false,
+      undefined,
     ],
     "type": "div",
   },
@@ -213,10 +213,10 @@ ShallowWrapper {
               Poland
             </div>
           </div>,
-          false,
+          undefined,
         ],
         "className": "artistEvent",
-        "onClick": [Function],
+        "onClick": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -326,7 +326,7 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-        false,
+        undefined,
       ],
       "type": "div",
     },

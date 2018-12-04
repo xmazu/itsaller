@@ -38,6 +38,8 @@ ShallowWrapper {
               "venue": "Tauron Arena",
             }
           }
+          onToggle={[Function]}
+          opened={false}
         />,
       ],
       "className": "eventsList",
@@ -46,8 +48,8 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "0",
-        "nodeType": "class",
+        "key": undefined,
+        "nodeType": "function",
         "props": Object {
           "event": Object {
             "city": "Krakow",
@@ -55,6 +57,8 @@ ShallowWrapper {
             "date": 2018-02-01T08:30:00.000Z,
             "venue": "Tauron Arena",
           },
+          "onToggle": [Function],
+          "opened": false,
         },
         "ref": null,
         "rendered": null,
@@ -79,6 +83,8 @@ ShallowWrapper {
                 "venue": "Tauron Arena",
               }
             }
+            onToggle={[Function]}
+            opened={false}
           />,
         ],
         "className": "eventsList",
@@ -87,8 +93,8 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
-          "nodeType": "class",
+          "key": undefined,
+          "nodeType": "function",
           "props": Object {
             "event": Object {
               "city": "Krakow",
@@ -96,6 +102,8 @@ ShallowWrapper {
               "date": 2018-02-01T08:30:00.000Z,
               "venue": "Tauron Arena",
             },
+            "onToggle": [Function],
+            "opened": false,
           },
           "ref": null,
           "rendered": null,

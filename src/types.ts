@@ -1,6 +1,3 @@
-// https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html
-export type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
-
 export interface ArtistEntity {
   facebook: string;
   image: string;
@@ -8,6 +5,7 @@ export interface ArtistEntity {
 }
 
 export interface EventEntity {
+  id: string;
   date: string;
   venue: string;
   city: string;

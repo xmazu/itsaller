@@ -30,6 +30,7 @@ export const fetchArtistEvents = async (
 
   return Array.isArray(events)
     ? events.map(event => ({
+        id: event.id,
         city: event.venue.city,
         venue: event.venue.name,
         date: event.datetime,

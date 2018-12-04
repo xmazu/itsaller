@@ -1,5 +1,6 @@
 [
   {
+    "id": "100267054",
     "city": "Las Vegas",
     "venue": "Mandalay Bay Events Center",
     "date": "2018-12-30T19:00:48",
@@ -8,6 +9,7 @@
     "lat": 36.128561
   },
   {
+    "id": "100272825",
     "city": "Las Vegas",
     "venue": "Mandalay Bay Events Center",
     "date": "2018-12-31T19:00:28",
@@ -16,6 +18,7 @@
     "lat": 36.128561
   },
   {
+    "id": "100266674",
     "city": "Brisbane",
     "venue": "Brisbane Entertainment Centre",
     "date": "2019-02-19T19:00:50",
@@ -24,6 +27,7 @@
     "lat": -27.3645676
   },
   {
+    "id": "100266687",
     "city": "Sydney",
     "venue": "Qudos Bank Arena",
     "date": "2019-02-21T19:00:51",
@@ -32,6 +36,7 @@
     "lat": -33.8688197
   },
   {
+    "id": "100266699",
     "city": "Melbourne",
     "venue": "Rod Laver Arena",
     "date": "2019-02-22T19:00:13",
@@ -40,6 +45,7 @@
     "lat": -37.8136276
   },
   {
+    "id": "100266703",
     "city": "Tokyo",
     "venue": "Tokyo Dome",
     "date": "2019-02-25T19:00:23",
@@ -48,6 +54,7 @@
     "lat": 35.7034611
   },
   {
+    "id": "100266728",
     "city": "Seoul",
     "venue": "Gocheok Sky Dome",
     "date": "2019-02-27T19:00:33",
@@ -56,6 +63,7 @@
     "lat": 37.498222
   },
   {
+    "id": "100266731",
     "city": "Kaohsiung City",
     "venue": "TBA",
     "date": "2019-03-01T19:00:36",
@@ -64,6 +72,7 @@
     "lat": 22.6272784
   },
   {
+    "id": "100266746",
     "city": "Macau",
     "venue": "TBA",
     "date": "2019-03-03T19:00:44",
@@ -72,6 +81,7 @@
     "lat": 22.198745
   },
   {
+    "id": "100266748",
     "city": "Manila",
     "venue": "SM Mall Of Asia",
     "date": "2019-03-05T19:00:07",
@@ -80,6 +90,7 @@
     "lat": 14.5352312
   },
   {
+    "id": "100266758",
     "city": "Singapore",
     "venue": "NATIONAL STADIUM",
     "date": "2019-03-07T19:00:41",
@@ -88,6 +99,7 @@
     "lat": 1.352083
   },
   {
+    "id": "100266766",
     "city": "Bangkok",
     "venue": "CHALLENGER HALL",
     "date": "2019-03-09T19:00:34",
@@ -96,6 +108,7 @@
     "lat": 13.82031
   },
   {
+    "id": "100271623",
     "city": "Aalborg",
     "venue": "Mollenpark",
     "date": "2019-06-01T19:00:44",
@@ -104,6 +117,7 @@
     "lat": 57.0488195
   },
   {
+    "id": "100271604",
     "city": "Cologne",
     "venue": "Lanxess Arena",
     "date": "2019-06-03T19:00:11",
@@ -112,6 +126,7 @@
     "lat": 50.937531
   },
   {
+    "id": "100271626",
     "city": "Prague",
     "venue": "O2 ARENA",
     "date": "2019-06-05T19:00:34",
@@ -120,6 +135,7 @@
     "lat": 50.0755381
   },
   {
+    "id": "100266776",
     "city": "Kraków",
     "venue": "Tauron Arena",
     "date": "2019-06-06T19:00:29",
@@ -128,6 +144,7 @@
     "lat": 50.067192
   },
   {
+    "id": "100271640",
     "city": "Amsterdam",
     "venue": "Ziggo Dome",
     "date": "2019-06-10T19:00:09",
@@ -136,6 +153,7 @@
     "lat": 52.3702157
   },
   {
+    "id": "100271631",
     "city": "Paris",
     "venue": "AccorHotels Arena",
     "date": "2019-06-11T19:00:06",

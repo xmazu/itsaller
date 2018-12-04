@@ -8,14 +8,47 @@ export interface EventsListProps {
   events: EventEntity[];
 }
 
-const eventItemRenderer = (event: EventEntity, index: number) => (
-  <ArtistEvent key={index} event={event} />
-);
+export interface EventsListState {
+  openedId: string | null;
+}
 
-const EventsList: SFC<EventsListProps> = ({ events }) => (
-  <div className="eventsList">
-    {events.length > 0 ? events.map(eventItemRenderer) : <span>No events</span>}
-  </div>
-);
+export default class EventsList extends React.Component<
+  EventsListProps,
+  EventsListState
+> {
+  constructor(props: EventsListProps) {
+    super(props);
 
-export default EventsList;
+    this.state = {
+      openedId: null
+    };
+  }
+
+  onToggleEvent = (event: EventEntity) => () =>
+    this.setState(prevState => ({
+      openedId: prevState.openedId === event.id ? null : event.id
+    }));
+
+  renderEventItem = (event: EventEntity) => (
+    <ArtistEvent
+      key={event.id}
+      event={event}
+      opened={this.state.openedId === event.id}
+      onToggle={this.onToggleEvent(event)}
+    />
+  );
+
+  render() {
+    const { events } = this.props;
+
+    return (
+      <div className="eventsList">
+        {events.length > 0 ? (
+          events.map(this.renderEventItem)
+        ) : (
+          <span>No events</span>
+        )}
+      </div>
+    );
+  }
+}
