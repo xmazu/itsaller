@@ -1,1 +1,1 @@
-fancy name generator: https://mrsharpoblunto.github.io/foswig.js/
+fancy name generated with: https://mrsharpoblunto.github.io/foswig.js/
