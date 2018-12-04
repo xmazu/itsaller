@@ -54,6 +54,17 @@ export default class ApplicationContainer extends React.Component<
   }
 
   onChangeQuery = (query: string) => {
+    if (!query) {
+      this.setState({
+        query: '',
+        pending: false,
+        artist: null,
+        error: null,
+        events: []
+      });
+      return;
+    }
+
     this.setState(
       {
         query
@@ -65,12 +76,17 @@ export default class ApplicationContainer extends React.Component<
   };
 
   onKeyUp() {
-    this.loadData();
+    if (this.state.query) {
+      this.loadData();
+    }
   }
 
   loadData = async () => {
     this.setState({
-      pending: true
+      pending: true,
+      artist: null,
+      error: null,
+      events: []
     });
 
     try {
