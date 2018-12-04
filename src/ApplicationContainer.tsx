@@ -13,7 +13,7 @@ import Loader from './components/loader';
 
 const history = createHistory();
 
-const INPUT_DEBOUNCE_TIME = 1000;
+const INPUT_DEBOUNCE_TIME = 500;
 
 export interface ApplicationContainerProps {}
 
