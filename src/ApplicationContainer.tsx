@@ -5,22 +5,24 @@ import createHistory from 'history/createBrowserHistory';
 
 import './application-container.scss';
 import SearchInput from './components/search-input';
-import { Artist } from './types';
+import { ArtistEntity, EventEntity } from './types';
 import { fetchArtist, fetchArtistEvents } from './utils/api';
+import ArtistProfile from './components/artist-profile';
+import ConditionalOverlay from './components/conditional-overlay';
 import Loader from './components/loader';
-import ArtistProfile from './components/artist-profile/ArtistProfile';
 
 const history = createHistory();
 
-const INPUT_DEBOUNCE_TIME = 100;
+const INPUT_DEBOUNCE_TIME = 1000;
 
 export interface ApplicationContainerProps {}
 
 export interface ApplicationContainerState {
-  pending: boolean;
-  query: string;
-  artist: Artist | null;
   pinned: boolean;
+  query: string;
+  artist: ArtistEntity | null;
+  events: EventEntity[];
+  pending: boolean;
   error: Error | null;
 }
 
@@ -34,20 +36,21 @@ export default class ApplicationContainer extends React.Component<
     this.state = {
       pending: false,
       artist: null,
+      events: [],
       query: '',
       pinned: false,
       error: null
     };
 
-    this.loadData = debounce(this.loadData.bind(this), INPUT_DEBOUNCE_TIME, {
-      leading: true
-    });
+    this.onKeyUp = debounce(this.onKeyUp.bind(this), INPUT_DEBOUNCE_TIME);
   }
 
   componentDidMount() {
-    this.setState({ query: history.location.pathname.slice(1) }, () =>
-      this.loadData()
-    );
+    const query = history.location.pathname.slice(1);
+
+    if (query) {
+      this.setState({ query }, () => this.loadData());
+    }
   }
 
   onChangeQuery = (query: string) => {
@@ -57,12 +60,15 @@ export default class ApplicationContainer extends React.Component<
       },
       () => {
         history.replace('/' + decodeURIComponent(query));
-        this.loadData();
       }
     );
   };
 
-  async loadData() {
+  onKeyUp() {
+    this.loadData();
+  }
+
+  loadData = async () => {
     this.setState({
       pending: true
     });
@@ -70,54 +76,56 @@ export default class ApplicationContainer extends React.Component<
     try {
       const artist = await fetchArtist(this.state.query);
       const events = await fetchArtistEvents(artist.name);
-      console.log(events);
-      console.log(artist);
       this.setState({
         error: null,
-        artist
+        artist,
+        events
       });
     } catch (error) {
-      this.setState({ error, artist: null });
+      this.setState({ error, artist: null, events: [] });
     } finally {
       this.setState({ pending: false });
     }
-  }
+  };
 
   renderResults() {
-    const { pending, error, query, artist } = this.state;
+    const { pending, error, query, artist, events } = this.state;
+
+    if (pending) {
+      return null;
+    }
 
     if (error) {
       return <div>Artist not found</div>;
     }
 
-    if (!query || !artist) {
-      return null;
-    }
-
-    if (pending) {
-      return <Loader />;
-    }
-
-    return <ArtistProfile artist={artist} />;
+    return artist ? <ArtistProfile artist={artist} events={events} /> : null;
   }
 
   render() {
+    const { query, pending } = this.state;
     return (
-      <div className="applicationContainer">
-        <div className="applicationContainer__content">
-          <div
-            className={classnames('searchForm', {
-              'searchForm--pinned': this.state.query
-            })}
-          >
-            <SearchInput
-              onChange={this.onChangeQuery}
-              value={this.state.query}
-            />
-            {this.renderResults()}
+      <ConditionalOverlay
+        condition={pending}
+        overlay={<Loader text="Searching the best result..." />}
+      >
+        <div className="applicationContainer">
+          <div className="applicationContainer__content">
+            <div
+              className={classnames('searchForm', {
+                'searchForm--pinned': this.state.query
+              })}
+            >
+              <SearchInput
+                onChange={this.onChangeQuery}
+                onKeyUp={this.onKeyUp}
+                value={this.state.query}
+              />
+              {query && this.renderResults()}
+            </div>
           </div>
         </div>
-      </div>
+      </ConditionalOverlay>
     );
   }
 }

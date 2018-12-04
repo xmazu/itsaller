@@ -6,6 +6,7 @@ import './search-input.scss';
 export interface SearchInputProps {
   value: string;
   onChange(query: string): void;
+  onKeyUp(): void;
 }
 
 export default class SearchInput extends React.Component<SearchInputProps> {
@@ -15,10 +16,12 @@ export default class SearchInput extends React.Component<SearchInputProps> {
   render() {
     return (
       <div className="searchInput">
-        <Icon icon="search" />
+        <Icon icon="search" className="searchInput__icon" />
         <input
+          className="searchInput__editor"
           placeholder="search..."
           onChange={this.onChange}
+          onKeyUp={this.props.onKeyUp}
           value={this.props.value}
         />
       </div>

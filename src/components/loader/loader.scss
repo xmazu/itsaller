@@ -7,7 +7,7 @@
   }
 }
 
-.loader {
+.spinner {
   display: inline-block;
   border: 4px solid #F9F9FB;
   border-left-color: #425A70;
@@ -15,4 +15,21 @@
   width: 30px;
   height: 30px;
   animation: spin 1.2s linear infinite;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.loader__spinner {
+  display: flex;
+  justify-content: center;
+}
+
+.loader__text {
+  margin-top: 30px;
+  font-size: 1.5rem;
 }

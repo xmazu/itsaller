@@ -1,9 +1,9 @@
-import { Artist, ArtistEvent } from '../types';
+import { ArtistEntity, EventEntity } from '../types';
 
 const apiFetch = (path: string) =>
   fetch(`https://rest.bandsintown.com${path}?app_id=someid`);
 
-export const fetchArtist = async (query: string): Promise<Artist> => {
+export const fetchArtist = async (query: string): Promise<ArtistEntity> => {
   const artistResponse = await apiFetch(`/artists/${query}`);
   const artist = await artistResponse.json();
 
@@ -20,7 +20,7 @@ export const fetchArtist = async (query: string): Promise<Artist> => {
 
 export const fetchArtistEvents = async (
   artist: string
-): Promise<ArtistEvent[]> => {
+): Promise<EventEntity[]> => {
   const eventsResponse = await apiFetch(`/artists/${artist}/events`);
   const events = await eventsResponse.json();
 
