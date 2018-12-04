@@ -46,7 +46,9 @@ export default class EventsList extends React.Component<
         {events.length > 0 ? (
           events.map(this.renderEventItem)
         ) : (
-          <span>No events</span>
+          <div className="eventsList__emptyMessage">
+            <span>No events found.</span>
+          </div>
         )}
       </div>
     );

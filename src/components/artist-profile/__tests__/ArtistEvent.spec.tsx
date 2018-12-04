@@ -4,16 +4,24 @@ import { shallow } from 'enzyme';
 import ArtistEvent from '../ArtistEvent';
 
 describe('<ArtistEvent />', () => {
-  it('renders correctly', () => {
+  it('renders correctly and it is clickable', () => {
     const mockedEvent = {
-      date: "2018-12-30T19:00:48",
+      id: 'my.id',
+      date: '2018-12-30T19:00:48',
       venue: 'Tauron Arena',
       city: 'Krakow',
       country: 'Poland',
-      long: 0,
-      lat: 0
+      lat: 0,
+      long: 0
     };
-    const component = shallow(<ArtistEvent event={mockedEvent} />);
+
+    const fn = jest.fn();
+
+    const component = shallow(
+      <ArtistEvent event={mockedEvent} opened={false} onToggle={fn} />
+    );
+    component.find('.artistEvent').simulate('click');
     expect(component).toMatchSnapshot();
+    expect(fn).toHaveBeenCalled();
   });
 });

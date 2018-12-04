@@ -6,10 +6,13 @@ import EventsList from '../EventsList';
 describe('<EventsList />', () => {
   it('renders correctly the list', () => {
     const mockedEvent = {
-      date: new Date(2018, 1, 1, 9, 30, 0, 0),
+      id: 'my.id',
+      date: '2018-12-30T19:00:48',
       venue: 'Tauron Arena',
       city: 'Krakow',
-      country: 'Poland'
+      country: 'Poland',
+      lat: 0,
+      long: 0
     };
     const component = shallow(<EventsList events={[mockedEvent]} />);
     expect(component).toMatchSnapshot();
@@ -17,6 +20,6 @@ describe('<EventsList />', () => {
 
   it('renders message for empty list', () => {
     const component = shallow(<EventsList events={[]} />);
-    expect(component.text()).toEqual('No events');
+    expect(component.text()).toEqual('No events found.');
   });
 });

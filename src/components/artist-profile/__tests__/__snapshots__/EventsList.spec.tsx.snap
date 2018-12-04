@@ -9,7 +9,10 @@ ShallowWrapper {
         Object {
           "city": "Krakow",
           "country": "Poland",
-          "date": 2018-02-01T08:30:00.000Z,
+          "date": "2018-12-30T19:00:48",
+          "id": "my.id",
+          "lat": 0,
+          "long": 0,
           "venue": "Tauron Arena",
         },
       ]
@@ -34,7 +37,10 @@ ShallowWrapper {
             Object {
               "city": "Krakow",
               "country": "Poland",
-              "date": 2018-02-01T08:30:00.000Z,
+              "date": "2018-12-30T19:00:48",
+              "id": "my.id",
+              "lat": 0,
+              "long": 0,
               "venue": "Tauron Arena",
             }
           }
@@ -48,13 +54,16 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "my.id",
         "nodeType": "function",
         "props": Object {
           "event": Object {
             "city": "Krakow",
             "country": "Poland",
-            "date": 2018-02-01T08:30:00.000Z,
+            "date": "2018-12-30T19:00:48",
+            "id": "my.id",
+            "lat": 0,
+            "long": 0,
             "venue": "Tauron Arena",
           },
           "onToggle": [Function],
@@ -79,7 +88,10 @@ ShallowWrapper {
               Object {
                 "city": "Krakow",
                 "country": "Poland",
-                "date": 2018-02-01T08:30:00.000Z,
+                "date": "2018-12-30T19:00:48",
+                "id": "my.id",
+                "lat": 0,
+                "long": 0,
                 "venue": "Tauron Arena",
               }
             }
@@ -93,13 +105,16 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "my.id",
           "nodeType": "function",
           "props": Object {
             "event": Object {
               "city": "Krakow",
               "country": "Poland",
-              "date": 2018-02-01T08:30:00.000Z,
+              "date": "2018-12-30T19:00:48",
+              "id": "my.id",
+              "lat": 0,
+              "long": 0,
               "venue": "Tauron Arena",
             },
             "onToggle": [Function],

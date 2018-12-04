@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ArtistEvent /> renders correctly 1`] = `
+exports[`<ArtistEvent /> renders correctly and it is clickable 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ArtistEvent
@@ -9,11 +9,26 @@ ShallowWrapper {
         "city": "Krakow",
         "country": "Poland",
         "date": "2018-12-30T19:00:48",
+        "id": "my.id",
         "lat": 0,
         "long": 0,
         "venue": "Tauron Arena",
       }
     }
+    onToggle={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    opened={false}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -59,10 +74,20 @@ ShallowWrapper {
             Poland
           </div>
         </div>,
-        undefined,
+        false,
       ],
       "className": "artistEvent",
-      "onClick": undefined,
+      "onClick": [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
     },
     "ref": null,
     "rendered": Array [
@@ -172,7 +197,7 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      undefined,
+      false,
     ],
     "type": "div",
   },
@@ -213,10 +238,20 @@ ShallowWrapper {
               Poland
             </div>
           </div>,
-          undefined,
+          false,
         ],
         "className": "artistEvent",
-        "onClick": undefined,
+        "onClick": [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -326,7 +361,7 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-        undefined,
+        false,
       ],
       "type": "div",
     },
