@@ -53,6 +53,9 @@ export default class ArtistEvent extends React.Component<
         {this.state.opened && (
           <div className="artistEvent__venueMap">
             <Map
+              bootstrapURLKeys={{
+                key: process.env.REACT_APP_GOOGLE_MAPS as string
+              }}
               defaultZoom={11}
               defaultCenter={{
                 lng: event.long,
