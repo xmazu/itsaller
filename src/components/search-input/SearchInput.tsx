@@ -10,8 +10,8 @@ export interface SearchInputProps {
 }
 
 export default class SearchInput extends React.Component<SearchInputProps> {
-  onChange = (e: React.SyntheticEvent<HTMLInputElement>) =>
-    this.props.onChange(e.currentTarget.value);
+  onChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    this.props.onChange(e.target.value);
 
   render() {
     return (

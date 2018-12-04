@@ -1,0 +1,439 @@
+[
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100267054?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Mandalay Bay Events Center",
+      "country": "United States",
+      "region": "NV",
+      "city": "Las Vegas",
+      "latitude": "36.128561",
+      "longitude": "-115.1711298"
+    },
+    "datetime": "2018-12-30T19:00:48",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100267054",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100267054?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100272825?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Mandalay Bay Events Center",
+      "country": "United States",
+      "region": "NV",
+      "city": "Las Vegas",
+      "latitude": "36.128561",
+      "longitude": "-115.1711298"
+    },
+    "datetime": "2018-12-31T19:00:28",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100272825",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100272825?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266674?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Brisbane Entertainment Centre",
+      "country": "Australia",
+      "region": "",
+      "city": "Brisbane",
+      "latitude": "-27.3645676",
+      "longitude": "153.0441933"
+    },
+    "datetime": "2019-02-19T19:00:50",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266674",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266674?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266687?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Qudos Bank Arena",
+      "country": "Australia",
+      "region": "",
+      "city": "Sydney",
+      "latitude": "-33.8688197",
+      "longitude": "151.2092955"
+    },
+    "datetime": "2019-02-21T19:00:51",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266687",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266687?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266699?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Rod Laver Arena",
+      "country": "Australia",
+      "region": "",
+      "city": "Melbourne",
+      "latitude": "-37.8136276",
+      "longitude": "144.9630576"
+    },
+    "datetime": "2019-02-22T19:00:13",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266699",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266699?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266703?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Tokyo Dome",
+      "country": "Japan",
+      "region": "Tokyo",
+      "city": "Tokyo",
+      "latitude": "35.7034611",
+      "longitude": "139.7545086"
+    },
+    "datetime": "2019-02-25T19:00:23",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266703",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266703?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266728?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Gocheok Sky Dome",
+      "country": "South Korea",
+      "region": "",
+      "city": "Seoul",
+      "latitude": "37.498222",
+      "longitude": "126.86725"
+    },
+    "datetime": "2019-02-27T19:00:33",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266728",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266728?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266731?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "TBA",
+      "country": "Taiwan",
+      "region": "",
+      "city": "Kaohsiung City",
+      "latitude": "22.6272784",
+      "longitude": "120.3014353"
+    },
+    "datetime": "2019-03-01T19:00:36",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266731",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266731?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266746?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "TBA",
+      "country": "Macau",
+      "region": "",
+      "city": "Macau",
+      "latitude": "22.198745",
+      "longitude": "113.543873"
+    },
+    "datetime": "2019-03-03T19:00:44",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266746",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266746?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266748?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "SM Mall Of Asia",
+      "country": "Philippines",
+      "region": "",
+      "city": "Manila",
+      "latitude": "14.5352312",
+      "longitude": "120.98211049999998"
+    },
+    "datetime": "2019-03-05T19:00:07",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266748",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266748?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266758?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "NATIONAL STADIUM",
+      "country": "Singapore",
+      "region": "",
+      "city": "Singapore",
+      "latitude": "1.352083",
+      "longitude": "103.819836"
+    },
+    "datetime": "2019-03-07T19:00:41",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266758",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266758?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266766?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "CHALLENGER HALL",
+      "country": "Thailand",
+      "region": "",
+      "city": "Bangkok",
+      "latitude": "13.82031",
+      "longitude": "100.6647101"
+    },
+    "datetime": "2019-03-09T19:00:34",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266766",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266766?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100271623?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Mollenpark",
+      "country": "Denmark",
+      "region": "",
+      "city": "Aalborg",
+      "latitude": "57.0488195",
+      "longitude": "9.921747"
+    },
+    "datetime": "2019-06-01T19:00:44",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100271623",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100271623?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100271604?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Lanxess Arena",
+      "country": "Germany",
+      "region": "",
+      "city": "Cologne",
+      "latitude": "50.937531",
+      "longitude": "6.9602786"
+    },
+    "datetime": "2019-06-03T19:00:11",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100271604",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100271604?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100271626?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      },
+      {
+        "type": "VIP",
+        "url": "https://www.bandsintown.com/t/100271626?app_id=someid&came_from=267&custom=true&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "O2 ARENA",
+      "country": "Czech Republic",
+      "region": "",
+      "city": "Prague",
+      "latitude": "50.0755381",
+      "longitude": "14.4378005"
+    },
+    "datetime": "2019-06-05T19:00:34",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100271626",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100271626?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100266776?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Tauron Arena",
+      "country": "Poland",
+      "region": "",
+      "city": "Kraków",
+      "latitude": "50.067192",
+      "longitude": "19.9589015"
+    },
+    "datetime": "2019-06-06T19:00:29",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100266776",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100266776?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100271640?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "Ziggo Dome",
+      "country": "Netherlands",
+      "region": "",
+      "city": "Amsterdam",
+      "latitude": "52.3702157",
+      "longitude": "4.895167900000001"
+    },
+    "datetime": "2019-06-10T19:00:09",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100271640",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100271640?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100271631?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "name": "AccorHotels Arena",
+      "country": "France",
+      "region": "",
+      "city": "Paris",
+      "latitude": "48.85661400000001",
+      "longitude": "2.3522219"
+    },
+    "datetime": "2019-06-11T19:00:06",
+    "on_sale_datetime": "",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "100271631",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/100271631?app_id=someid&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  }
+]

@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArtistEvent /> renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArtistEvent
+    event={
+      Object {
+        "city": "Krakow",
+        "country": "Poland",
+        "date": 2018-02-01T08:30:00.000Z,
+        "venue": "Tauron Arena",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="artistEvent__date"
+        >
+          <div
+            className="artistEvent__month"
+          >
+            Feb
+          </div>
+          <div
+            className="artistEvent__day"
+          >
+            01
+          </div>
+        </div>,
+        <div
+          className="artistEvent__venue"
+        >
+          <div
+            className="artistEvent__venueName"
+          >
+            Tauron Arena
+          </div>
+          <div
+            className="artistEvent__city"
+          >
+            Krakow
+            , 
+            Poland
+          </div>
+        </div>,
+      ],
+      "className": "artistEvent",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="artistEvent__month"
+            >
+              Feb
+            </div>,
+            <div
+              className="artistEvent__day"
+            >
+              01
+            </div>,
+          ],
+          "className": "artistEvent__date",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Feb",
+              "className": "artistEvent__month",
+            },
+            "ref": null,
+            "rendered": "Feb",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "01",
+              "className": "artistEvent__day",
+            },
+            "ref": null,
+            "rendered": "01",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="artistEvent__venueName"
+            >
+              Tauron Arena
+            </div>,
+            <div
+              className="artistEvent__city"
+            >
+              Krakow
+              , 
+              Poland
+            </div>,
+          ],
+          "className": "artistEvent__venue",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Tauron Arena",
+              "className": "artistEvent__venueName",
+            },
+            "ref": null,
+            "rendered": "Tauron Arena",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Krakow",
+                ", ",
+                "Poland",
+              ],
+              "className": "artistEvent__city",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Krakow",
+              ", ",
+              "Poland",
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="artistEvent__date"
+          >
+            <div
+              className="artistEvent__month"
+            >
+              Feb
+            </div>
+            <div
+              className="artistEvent__day"
+            >
+              01
+            </div>
+          </div>,
+          <div
+            className="artistEvent__venue"
+          >
+            <div
+              className="artistEvent__venueName"
+            >
+              Tauron Arena
+            </div>
+            <div
+              className="artistEvent__city"
+            >
+              Krakow
+              , 
+              Poland
+            </div>
+          </div>,
+        ],
+        "className": "artistEvent",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="artistEvent__month"
+              >
+                Feb
+              </div>,
+              <div
+                className="artistEvent__day"
+              >
+                01
+              </div>,
+            ],
+            "className": "artistEvent__date",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Feb",
+                "className": "artistEvent__month",
+              },
+              "ref": null,
+              "rendered": "Feb",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "01",
+                "className": "artistEvent__day",
+              },
+              "ref": null,
+              "rendered": "01",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="artistEvent__venueName"
+              >
+                Tauron Arena
+              </div>,
+              <div
+                className="artistEvent__city"
+              >
+                Krakow
+                , 
+                Poland
+              </div>,
+            ],
+            "className": "artistEvent__venue",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Tauron Arena",
+                "className": "artistEvent__venueName",
+              },
+              "ref": null,
+              "rendered": "Tauron Arena",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Krakow",
+                  ", ",
+                  "Poland",
+                ],
+                "className": "artistEvent__city",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Krakow",
+                ", ",
+                "Poland",
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
