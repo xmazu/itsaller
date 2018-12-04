@@ -1,7 +1,11 @@
 import { ArtistEntity, EventEntity } from '../types';
 
 const apiFetch = (path: string) =>
-  fetch(`https://rest.bandsintown.com${path}?app_id=someid`);
+  fetch(
+    `https://rest.bandsintown.com${path}?app_id=${
+      process.env.REACT_APP_API_KEY
+    }`
+  );
 
 export const fetchArtist = async (query: string): Promise<ArtistEntity> => {
   const artistResponse = await apiFetch(`/artists/${query}`);

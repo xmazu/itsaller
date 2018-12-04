@@ -5,10 +5,13 @@
   border-bottom: 1px solid #f9f9fb;
   padding: 15px;
   cursor: pointer;
-
   &:hover {
     background-color: #E4E7EB;
   }
+}
+
+.artistEvent--visible-map {
+  background-color: #E4E7EB;
 }
 
 .artistEvent__date {

@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 import moment from 'moment';
 import Map from 'google-map-react';
 
@@ -29,8 +30,14 @@ export default class ArtistEvent extends React.Component<
 
   render() {
     const { event } = this.props;
+    const { opened } = this.state;
     return (
-      <div className="artistEvent" onClick={this.toggleMap}>
+      <div
+        className={classnames('artistEvent', {
+          'artistEvent--visible-map': opened
+        })}
+        onClick={this.toggleMap}
+      >
         <div className="artistEvent__date">
           <div className="artistEvent__month">
             {moment(event.date)
@@ -50,11 +57,11 @@ export default class ArtistEvent extends React.Component<
             {event.city}, {event.country}
           </div>
         </div>
-        {this.state.opened && (
+        {opened && (
           <div className="artistEvent__venueMap">
             <Map
               bootstrapURLKeys={{
-                key: process.env.REACT_APP_GOOGLE_MAPS as string
+                key: String(process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
               }}
               defaultZoom={11}
               defaultCenter={{
