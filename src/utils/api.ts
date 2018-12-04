@@ -28,7 +28,7 @@ export const fetchArtistEvents = async (
     ? events.map(event => ({
         city: event.venue.city,
         venue: event.venue.name,
-        date: new Date(event.datetime),
+        date: event.datetime,
         country: event.venue.country
       }))
     : [];

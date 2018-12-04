@@ -8,7 +8,7 @@ export interface ArtistEntity {
 }
 
 export interface EventEntity {
-  date: Date;
+  date: string;
   venue: string;
   city: string;
   country: string;
