@@ -18,7 +18,6 @@ const INPUT_DEBOUNCE_TIME = 1000;
 export interface ApplicationContainerProps {}
 
 export interface ApplicationContainerState {
-  pinned: boolean;
   query: string;
   artist: ArtistEntity | null;
   events: EventEntity[];
@@ -38,7 +37,6 @@ export default class ApplicationContainer extends React.Component<
       artist: null,
       events: [],
       query: '',
-      pinned: false,
       error: null
     };
 
