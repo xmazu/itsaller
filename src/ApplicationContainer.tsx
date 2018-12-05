@@ -52,21 +52,15 @@ export default class ApplicationContainer extends React.Component<
   }
 
   onChangeQuery = (query: string) => {
-    if (!query) {
-      this.setState(
-        {
-          query: '',
-          pending: false,
-          artist: null,
-          error: null,
-          events: []
-        },
-        () => this.changeQueryCallback(query)
-      );
-      return;
-    }
-
-    this.setState({ query }, () => this.changeQueryCallback(query));
+    this.setState(
+      {
+        query,
+        ...(query
+          ? ({} as ApplicationContainerState)
+          : { pending: false, artist: null, error: null, events: [] })
+      },
+      () => this.changeQueryCallback(query)
+    );
   };
 
   changeQueryCallback = (query: string) =>
@@ -90,12 +84,11 @@ export default class ApplicationContainer extends React.Component<
       const artist = await fetchArtist(this.state.query);
       const events = await fetchArtistEvents(artist.name);
       this.setState({
-        error: null,
         artist,
         events
       });
     } catch (error) {
-      this.setState({ error, artist: null, events: [] });
+      this.setState({ error });
     } finally {
       this.setState({ pending: false });
     }
@@ -126,13 +119,13 @@ export default class ApplicationContainer extends React.Component<
           <div className="applicationContainer__content">
             <div
               className={classnames('searchForm', {
-                'searchForm--pinned': this.state.query
+                'searchForm--pinned': Boolean(query)
               })}
             >
               <SearchInput
                 onChange={this.onChangeQuery}
                 onKeyUp={this.onKeyUp}
-                value={this.state.query}
+                value={query}
               />
               {query && this.renderResults()}
             </div>
