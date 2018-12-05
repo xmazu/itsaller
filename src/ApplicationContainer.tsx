@@ -10,6 +10,7 @@ import { fetchArtist, fetchArtistEvents } from './utils/api';
 import ArtistProfile from './components/artist-profile';
 import ConditionalOverlay from './components/conditional-overlay';
 import Loader from './components/loader';
+import ErrorBoundary from './components/error-boundary';
 
 const history = createHistory();
 
@@ -47,24 +48,21 @@ export default class ApplicationContainer extends React.Component<
     const query = history.location.pathname.slice(1);
 
     if (query) {
-      this.setState({ query: decodeURIComponent(query) }, () => this.loadData());
+      this.setState({ query: decodeURIComponent(query) }, () =>
+        this.loadData()
+      );
     }
   }
 
   onChangeQuery = (query: string) => {
-    this.setState(
-      {
-        query,
-        ...(query
-          ? ({} as ApplicationContainerState)
-          : { pending: false, artist: null, error: null, events: [] })
-      },
-      () => this.changeQueryCallback(query)
-    );
-  };
-
-  changeQueryCallback = (query: string) =>
+    this.setState({
+      query,
+      ...(query
+        ? ({} as ApplicationContainerState)
+        : { pending: false, artist: null, error: null, events: [] })
+    });
     history.replace('/' + encodeURIComponent(query));
+  };
 
   onKeyUp() {
     if (this.state.query) {
@@ -111,27 +109,29 @@ export default class ApplicationContainer extends React.Component<
   render() {
     const { query, pending } = this.state;
     return (
-      <ConditionalOverlay
-        condition={pending}
-        overlay={<Loader text="Searching for the best result..." />}
-      >
-        <div className="applicationContainer">
-          <div className="applicationContainer__content">
-            <div
-              className={classnames('searchForm', {
-                'searchForm--pinned': Boolean(query)
-              })}
-            >
-              <SearchInput
-                onChange={this.onChangeQuery}
-                onKeyUp={this.onKeyUp}
-                value={query}
-              />
-              {query && this.renderResults()}
+      <ErrorBoundary>
+        <ConditionalOverlay
+          condition={pending}
+          overlay={<Loader text="Searching for the best result..." />}
+        >
+          <div className="applicationContainer">
+            <div className="applicationContainer__content">
+              <div
+                className={classnames('searchForm', {
+                  'searchForm--pinned': Boolean(query)
+                })}
+              >
+                <SearchInput
+                  onChange={this.onChangeQuery}
+                  onKeyUp={this.onKeyUp}
+                  value={query}
+                />
+                {query && this.renderResults()}
+              </div>
             </div>
           </div>
-        </div>
-      </ConditionalOverlay>
+        </ConditionalOverlay>
+      </ErrorBoundary>
     );
   }
 }
