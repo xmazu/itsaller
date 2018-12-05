@@ -1,3 +1,4 @@
+import { sanitize } from './sanitize';
 import { ArtistEntity, EventEntity } from '../types';
 
 const apiFetch = (path: string) =>
@@ -8,7 +9,7 @@ const apiFetch = (path: string) =>
   );
 
 export const fetchArtist = async (query: string): Promise<ArtistEntity> => {
-  const artistResponse = await apiFetch(`/artists/${query}`);
+  const artistResponse = await apiFetch(`/artists/${sanitize(query)}`);
   const artist = await artistResponse.json();
 
   if (!artist || artist.error) {
@@ -25,7 +26,7 @@ export const fetchArtist = async (query: string): Promise<ArtistEntity> => {
 export const fetchArtistEvents = async (
   artist: string
 ): Promise<EventEntity[]> => {
-  const eventsResponse = await apiFetch(`/artists/${artist}/events`);
+  const eventsResponse = await apiFetch(`/artists/${sanitize(artist)}/events`);
   const events = await eventsResponse.json();
 
   return Array.isArray(events)

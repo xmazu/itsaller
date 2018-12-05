@@ -47,7 +47,7 @@ export default class ApplicationContainer extends React.Component<
     const query = history.location.pathname.slice(1);
 
     if (query) {
-      this.setState({ query }, () => this.loadData());
+      this.setState({ query: decodeURIComponent(query) }, () => this.loadData());
     }
   }
 
@@ -64,7 +64,7 @@ export default class ApplicationContainer extends React.Component<
   };
 
   changeQueryCallback = (query: string) =>
-    history.replace('/' + decodeURIComponent(query));
+    history.replace('/' + encodeURIComponent(query));
 
   onKeyUp() {
     if (this.state.query) {
@@ -95,7 +95,7 @@ export default class ApplicationContainer extends React.Component<
   };
 
   renderResults() {
-    const { pending, error, query, artist, events } = this.state;
+    const { pending, error, artist, events } = this.state;
 
     if (pending) {
       return null;
